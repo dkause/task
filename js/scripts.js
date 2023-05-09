@@ -4,7 +4,9 @@ function newItem() {
   let li = $("<li></li>");
   let inputValue = $("#input").val();
   let span = $ ('<span></span>');
- 
+  
+  li.append(inputValue);
+
 
   if (inputValue == "") {
     alert("You must write something!");
